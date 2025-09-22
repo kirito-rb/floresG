@@ -393,23 +393,47 @@
         box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
       }
 @media (max-width: 480px) {
-      h1 { font-size: 22px; top: 10px; }
-      p { font-size: 15px; top: 70px; }
-      .flower_stem { height: 220px; }
-      .flower_center { width: 120px; height: 120px; }
-      .flower_petal { width: 60px; height: 110px; }
-      .flower-btn {
-      font-size: 16px;
-      padding: 12px 24px;
-      margin: 10px 0; /* reduce el margen para que quede visible */
-      position: absolute;
-      bottom: 20px; /* siempre visible en móviles */
-      left: 50%;
-      transform: translateX(-50%);}
-      .flower_wrapper {
-      bottom: 100px; /* antes 20px */
-      transform: translateX(-40%) scale(0.85);}
-    }
+  h1 {
+    font-size: 22px;
+    top: 10px;
+  }
+  p {
+    font-size: 15px;
+    top: 65px;
+  }
+
+  /* Acorta el tallo para que la flor suba */
+  .flower_stem {
+    height: 200px;
+  }
+
+  /* Reduce un poco el tamaño del centro y pétalos */
+  .flower_center {
+    width: 120px;
+    height: 120px;
+  }
+  .flower_petal {
+    width: 60px;
+    height: 110px;
+  }
+
+  /* Sube toda la flor y haz un leve escalado */
+  .flower_wrapper {
+    bottom: 160px; /* sube la flor (antes 100px) */
+    transform: translateX(-40%) scale(0.9);
+  }
+
+  /* Coloca el botón visible y más cerca del centro */
+  .flower-btn {
+    font-size: 16px;
+    padding: 12px 24px;
+    position: absolute;
+    bottom: 50px; /* más arriba que antes */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+}
     </style>
   </head>
   <body>
@@ -480,6 +504,7 @@
     </script>
   </body>
 </html>
+
 
 
 
